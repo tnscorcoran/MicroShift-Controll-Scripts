@@ -1,0 +1,54 @@
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:01:55.178518  270985 replica_set.go:577] "Too few replicas" replicaSet="default/guiseai-55b6d4498b" need=1 creating=1
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:01:55.186062  270985 replica_set.go:602] Slow-start failure. Skipping creation of 1 pods, decrementing expectations for ReplicaSet default/guiseai-55b6d4498b
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-controller-manager E0111 01:01:55.186124  270985 replica_set.go:550] sync "default/guiseai-55b6d4498b" failed with pods "guiseai-55b6d4498b-qlf6x" is forbidden: violates PodSecurity "restricted:latest": allowPrivilegeEscalation != false (container "guise" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "guise" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "guise" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "guise" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:01:55.186228  270985 event.go:294] "Event occurred" object="default/guiseai-55b6d4498b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Warning" reason="FailedCreate" message="Error creating: pods \"guiseai-55b6d4498b-qlf6x\" is forbidden: violates PodSecurity \"restricted:latest\": allowPrivilegeEscalation != false (container \"guise\" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container \"guise\" must set securityContext.capabilities.drop=[\"ALL\"]), runAsNonRoot != true (pod or container \"guise\" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container \"guise\" must set securityContext.seccompProfile.type to \"RuntimeDefault\" or \"Localhost\")"
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-apiserver I0111 01:01:55.191446  270985 httplog.go:137] "HTTP" verb="PATCH" URI="/api/v1/namespaces/default/events/guiseai-55b6d4498b.17391b6e55dafa76" latency="4.693734ms" userAgent="microshift/v1.25.0 (linux/amd64) kubernetes/f33d98e/system:serviceaccount:kube-system:replicaset-controller" audit-ID="5eb809ac-eca4-42d6-9136-2e2f2db6423d" srcIP="127.0.0.1:44780" apf_pl="workload-high" apf_fs="kube-system-service-accounts" apf_iseats=1 apf_fseats=0 apf_additionalLatency="0s" apf_execution_time="4.358041ms" resp=200
+Jan 11 01:01:55 microshift-starter.local microshift[270985]: kube-apiserver I0111 01:01:55.191496  270985 httplog.go:137] "HTTP" verb="PATCH" URI="/api/v1/namespaces/default/events/guiseai-55b6d4498b.17391b6e55dafa76" latency="4.753632ms" userAgent="microshift/v1.25.0 (linux/amd64) kubernetes/f33d98e/system:serviceaccount:kube-system:replicaset-controller" audit-ID="5eb809ac-eca4-42d6-9136-2e2f2db6423d" srcIP="127.0.0.1:44780" apf_pl="workload-high" apf_fs="kube-system-service-accounts" apf_iseats=1 apf_fseats=0 apf_additionalLatency="0s" apf_execution_time="4.358041ms" resp=200
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:02:15.666442  270985 replica_set.go:577] "Too few replicas" replicaSet="default/guiseai-55b6d4498b" need=1 creating=1
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:02:15.671438  270985 replica_set.go:602] Slow-start failure. Skipping creation of 1 pods, decrementing expectations for ReplicaSet default/guiseai-55b6d4498b
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-controller-manager E0111 01:02:15.671495  270985 replica_set.go:550] sync "default/guiseai-55b6d4498b" failed with pods "guiseai-55b6d4498b-94tgh" is forbidden: violates PodSecurity "restricted:latest": allowPrivilegeEscalation != false (container "guise" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "guise" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "guise" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "guise" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-controller-manager I0111 01:02:15.672041  270985 event.go:294] "Event occurred" object="default/guiseai-55b6d4498b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Warning" reason="FailedCreate" message="Error creating: pods \"guiseai-55b6d4498b-94tgh\" is forbidden: violates PodSecurity \"restricted:latest\": allowPrivilegeEscalation != false (container \"guise\" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container \"guise\" must set securityContext.capabilities.drop=[\"ALL\"]), runAsNonRoot != true (pod or container \"guise\" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container \"guise\" must set securityContext.seccompProfile.type to \"RuntimeDefault\" or \"Localhost\")"
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-apiserver I0111 01:02:15.677379  270985 httplog.go:137] "HTTP" verb="PATCH" URI="/api/v1/namespaces/default/events/guiseai-55b6d4498b.17391b6e55dafa76" latency="5.116728ms" userAgent="microshift/v1.25.0 (linux/amd64) kubernetes/f33d98e/system:serviceaccount:kube-system:replicaset-controller" audit-ID="9c3b3458-a83e-43c1-b61f-d935200dbac6" srcIP="127.0.0.1:44780" apf_pl="workload-high" apf_fs="kube-system-service-accounts" apf_iseats=1 apf_fseats=0 apf_additionalLatency="0s" apf_execution_time="4.786343ms" resp=200
+Jan 11 01:02:15 microshift-starter.local microshift[270985]: kube-apiserver I0111 01:02:15.677429  270985 httplog.go:137] "HTTP" verb="PATCH" URI="/api/v1/namespaces/default/events/guiseai-55b6d4498b.17391b6e55dafa76" latency="5.178363ms" userAgent="microshift/v1.25.0 (linux/amd64) kubernetes/f33d98e/system:serviceaccount:kube-system:replicaset-controller" audit-ID="9c3b3458-a83e-43c1-b61f-d935200dbac6" srcIP="127.0.0.1:44780" apf_pl="workload-high" apf_fs="kube-system-service-accounts" apf_iseats=1 apf_fseats=0 apf_additionalLatency="0s" apf_execution_time="4.786343ms" resp=200
+[redhat@microshift-starter guise.ai]$ oc describe deployment guiseai
+Name:                   guiseai
+Namespace:              default
+CreationTimestamp:      Wed, 11 Jan 2023 01:01:34 +0000
+Labels:                 app=guiseai
+                        version=v1
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=guiseai,version=v1
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=guiseai
+                    version=v1
+  Service Account:  guiseai
+  Containers:
+   guise:
+    Image:      quay.io/aspanner/edgerobotics:latest
+    Port:       65432/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     1
+      memory:  1000Mi
+    Requests:
+      cpu:        100m
+      memory:     800Mi
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type             Status  Reason
+  ----             ------  ------
+  Progressing      True    NewReplicaSetCreated
+  Available        False   MinimumReplicasUnavailable
+  ReplicaFailure   True    FailedCreate
+OldReplicaSets:    <none>
+NewReplicaSet:     guiseai-55b6d4498b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  83s   deployment-controller  Scaled up replica set guiseai-55b6d4498b to 1
