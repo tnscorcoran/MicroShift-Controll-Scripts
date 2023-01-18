@@ -34,13 +34,13 @@ spec:
           terminationMessagePath: /dev/termination-log
           name: guise
           securityContext:
+            capabilities:
+              drop: ["ALL"]
             privileged: false
             allowPrivilegeEscalation: false
             runAsNonRoot: true
             seccompProfiles:
               type: RuntimeDefault
-            requiredDropCapabilities: 
-            - ALL
           ports:
             - name: guiseai
               containerPort: 65432  #   The image runs on local port - 65432
