@@ -39,7 +39,7 @@ spec:
             privileged: false
             allowPrivilegeEscalation: false
             runAsNonRoot: true
-            seccompProfiles:
+            seccompProfile:
               type: RuntimeDefault
           ports:
             - name: guiseai
