@@ -47,7 +47,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
           terminationMessagePolicy: File
-          image: my-registry-quay-myquay.apps.anomaly-cluster.rqdu.p1.openshiftapps.com/edgerobotics/model
+          image: quay.io/tcorcoran/tcorcoran/guise-model
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
