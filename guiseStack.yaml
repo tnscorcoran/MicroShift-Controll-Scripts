@@ -72,10 +72,10 @@ metadata:
     service: guiseai
 spec:
   ports:
-    - name: 9000-tcp
-      port: 9000
+    - name: 30000-tcp
+      port: 30000
       protocol: TCP
-      targetPort: 9000
+      targetPort: 30000
   type: ClusterIP
   selector:
      app: guiseai
