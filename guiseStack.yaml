@@ -45,7 +45,7 @@ spec:
             - name: guiseai
               containerPort: 65432  #   The image runs on local port - 65432
               protocol: TCP
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           terminationMessagePolicy: File
           image: quay.io/tcorcoran/guise-model
       restartPolicy: Always
